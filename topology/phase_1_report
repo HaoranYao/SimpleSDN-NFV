@@ -1,0 +1,77 @@
+
+ICMP test started:
+Sending ICMP request from puz to puz
+Response received.
+Sending ICMP request from puz to prz
+Response not received.
+Sending ICMP request from prz to prz
+Response received.
+Sending ICMP request from prz to puz
+Response received.
+Sending ICMP request from puz to web server
+Response not received.
+Sending ICMP request from puz to dns server
+Response not received.
+
+
+
+
+
+
+
+TCP test started:
+Sending telnet request from h1 to WS1 port 80
+Sending telnet request from h3 to WS1 port 80
+Response received.
+Sending telnet request from h3 to WS1 port 100
+Response not received.
+Sending telnet request from puz to prz
+Response not received.
+Sending telnet request from prz to puz
+Response received.
+
+
+
+
+
+
+
+UDP test started:
+Sending DNS request from h1 to DS1 port 53
+Response received.
+Sending DNS request from h1 to DS2 port 53
+Response received.
+Sending DNS request from h1 to DS3 port 53
+Response received.
+Sending DNS request from h1 to DS1 port 100
+Response not received.
+Sending DNS request from h1 to DS2 port 100
+Response not received.
+Sending DNS request from h1 to DS3 port 100
+Response not received.
+Sending UDP packet from puz to prz port 1000
+Response not received.
+Sending UDP packet from prz to puz port 1000
+Response received.
+
+
+
+
+
+
+
+HTTP test starts:------------------------------------------------------------
+Server listening on UDP port 1000
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+--2019-04-17 15:52:43--  http://100.0.0.40/
+Connecting to 100.0.0.40:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 494 [text/html]
+Saving to: ‘index.html.5’
+
+ 0% [                                       ] 0           --.-K/s              100%[======================================>] 494         --.-K/s   in 0s      
+
+2019-04-17 15:52:43 (62.2 MB/s) - ‘index.html.5’ saved [494/494]
+
